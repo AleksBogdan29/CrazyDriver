@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{090653B9-BA9B-4DA6-9229-0957B3C435AA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CrazyDriver</RootNamespace>
+    <AssemblyName>CrazyDriver</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormGame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormGame.Designer.cs">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogo.Designer.cs">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMenu.Designer.cs">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSattings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSattings.Designer.cs">
+      <DependentUpon>FormSattings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormShop.Designer.cs">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTraining.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTraining.Designer.cs">
+      <DependentUpon>FormTraining.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormWarning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormWarning.Designer.cs">
+      <DependentUpon>FormWarning.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormGame.resx">
+      <DependentUpon>FormGame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogo.resx">
+      <DependentUpon>FormLogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSattings.resx">
+      <DependentUpon>FormSattings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormShop.resx">
+      <DependentUpon>FormShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTraining.resx">
+      <DependentUpon>FormTraining.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormWarning.resx">
+      <DependentUpon>FormWarning.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backGroundMenu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\speedometeIrcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeCarForMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carForMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundForShopForm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevroletForShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nissanForShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koenigseggForShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamborghiniForShop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMenu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="screensaveMrusic.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BackgroundForSettingsForm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconMenu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Three_lane_road_clean_01_2K_Base %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronze.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGreen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGrey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carOrange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carPink.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarRed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carYellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roadTrack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckBlue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGreen1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carGrey1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bronze1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\explosion1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carYellow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Three_lane_road_clean_01_2K_Base %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Three_lane_road_clean_01_2K_Base %286%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carOrange1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\carPink1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CarRed1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckBlue1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TruckWhite1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gold1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silver1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="menuMusic2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="musicGame.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5802910e1bb96f58cb4a79fffe784d86.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5802910e1bb96f58cb4a79fffe784d86 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5802910e1bb96f58cb4a79fffe784d86 %281%29-PhotoRoom.png-PhotoRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WarningGif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1674301284_catherineasquithgalle.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1674301284_catherineasquithgallery-com-p-fon-dlya-bannera-serii-foto-62.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1674281157_catherineasquithgallery-com-p-pri-pechati-risunka-serii-fon-foto-2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backgroundForTraining.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\leftKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rightKey.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audiForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\questionMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C226CC.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\C226CC %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulanceForTrafic .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audiForTrafic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lamborghiniForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lexusForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercedesForTrafic .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nissanGTRForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\peugeotForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\policeCarForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\porcheForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\taxiCarForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volkswagenForTrafic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brokenCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce1d05f802b335385e59828875d5298f-PhotoRoom.png-PhotoRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ce1d05f802b335385e59828875d5298f-PhotoRoom.png-PhotoRoom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brokenCar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brokenCar %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\camaroPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="soundCrash.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4955d7ec900b69c6986006f44a00e3c2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconCross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\koenigeseggForPlayer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
