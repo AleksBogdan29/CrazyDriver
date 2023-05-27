@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Emit;
 using System.Windows.Forms;
 
 namespace CrazyDriver
@@ -72,9 +73,9 @@ namespace CrazyDriver
             this.labelGame.Size = new System.Drawing.Size(139, 50);
             this.labelGame.TabIndex = 19;
             this.labelGame.Text = "Играть";
-            this.labelGame.Click += new System.EventHandler(this.labelGame_Click);
-            this.labelGame.MouseLeave += new System.EventHandler(this.LabelGame_MouseLeave);
-            this.labelGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LabelGame_MouseMove);
+            this.labelGame.Click += new System.EventHandler(this.LabelGame_Click);
+            this.labelGame.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label_MouseMove);
+            this.labelGame.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
             // 
             // labelSattings
             // 
@@ -87,9 +88,9 @@ namespace CrazyDriver
             this.labelSattings.Size = new System.Drawing.Size(187, 50);
             this.labelSattings.TabIndex = 21;
             this.labelSattings.Text = "Настройки";
-            this.labelSattings.Click += new System.EventHandler(this.labelSattings_Click);
-            this.labelSattings.MouseLeave += new System.EventHandler(this.LabelSattings_MouseLeave);
-            this.labelSattings.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LabelSattings_MouseMove);
+            this.labelSattings.Click += new System.EventHandler(this.LabelSattings_Click);
+            this.labelSattings.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label_MouseMove);
+            this.labelSattings.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
             // 
             // labelExit
             // 
@@ -102,9 +103,9 @@ namespace CrazyDriver
             this.labelExit.Size = new System.Drawing.Size(110, 50);
             this.labelExit.TabIndex = 22;
             this.labelExit.Text = "Выход";
-            this.labelExit.Click += new System.EventHandler(this.labelExit_Click);
-            this.labelExit.MouseLeave += new System.EventHandler(this.LabelExit_MouseLeave);
-            this.labelExit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.LabelExit_MouseMove);
+            this.labelExit.Click += new System.EventHandler(this.LabelExit_Click);
+            this.labelExit.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label_MouseMove);
+            this.labelExit.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
             // 
             // labelCrazy
             // 
@@ -142,9 +143,9 @@ namespace CrazyDriver
             this.labelTraining.Size = new System.Drawing.Size(155, 50);
             this.labelTraining.TabIndex = 28;
             this.labelTraining.Text = "Обучение";
-            this.labelTraining.Click += new System.EventHandler(this.labelTraining_Click);
-            this.labelTraining.MouseLeave += new System.EventHandler(this.labelTrainig_MouseLeave);
-            this.labelTraining.MouseMove += new System.Windows.Forms.MouseEventHandler(this.labelTraining_MouseMove);
+            this.labelTraining.Click += new System.EventHandler(this.LabelTraining_Click);
+            this.labelTraining.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Label_MouseMove);
+            this.labelTraining.MouseLeave += new System.EventHandler(this.Label_MouseLeave);
             // 
             // pictureBoxCarForMenu
             // 
@@ -227,9 +228,10 @@ namespace CrazyDriver
         private System.Windows.Forms.Label labelExit;
         private System.Windows.Forms.Label labelCrazy;
         private System.Windows.Forms.Label labelDriver;
+        private System.Windows.Forms.Label labelTraining;
         private System.Windows.Forms.PictureBox pictureBoxSpeedometerIcon;
         private System.Windows.Forms.PictureBox pictureBoxPoliceCar;
         private System.Windows.Forms.PictureBox pictureBoxCarForMenu;
-        private Label labelTraining;
+       
     }
 }

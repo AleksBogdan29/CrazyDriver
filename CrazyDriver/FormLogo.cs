@@ -26,15 +26,13 @@ namespace CrazyDriver
             this.ControlBox = false;
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             MaximizeBox = false;
-
-           
-            timer1.Interval = 17000;
-            timer1.Enabled = true;
+            timerLogo.Interval = 17000;
+            timerLogo.Enabled = true;
         }
 
         private void timerTick(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
+            timerLogo.Enabled = false;
             FormMenu formMenu = new FormMenu();
             formMenu.Show();
             this.Hide();

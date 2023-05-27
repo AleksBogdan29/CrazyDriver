@@ -32,25 +32,25 @@
             this.labelTraining = new System.Windows.Forms.Label();
             this.labelLeft = new System.Windows.Forms.Label();
             this.labelRight = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerTraining = new System.Windows.Forms.Timer(this.components);
             this.pictureBoxQuestionMark = new System.Windows.Forms.PictureBox();
             this.pictureBoxCar = new System.Windows.Forms.PictureBox();
             this.pictureBoxRightKey = new System.Windows.Forms.PictureBox();
             this.pictureBoxLeftKey = new System.Windows.Forms.PictureBox();
-            this.pictureBoxSpedometerIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIconMenu = new System.Windows.Forms.PictureBox();
             this.pictureBoxBackgroundTraining = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pictureBoxQuestionMark2 = new System.Windows.Forms.PictureBox();
+            this.labelTextFirst = new System.Windows.Forms.Label();
+            this.labelTextSecond = new System.Windows.Forms.Label();
+            this.labelTextThird = new System.Windows.Forms.Label();
+            this.labelTextFourth = new System.Windows.Forms.Label();
+            this.pictureBoxQuestionMarkIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestionMark)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightKey)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftKey)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpedometerIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackgroundTraining)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestionMark2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestionMarkIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // labelTraining
@@ -87,9 +87,9 @@
             this.labelRight.TabIndex = 34;
             this.labelRight.Text = "Двигаться вправо";
             // 
-            // timer1
+            // timerTraining
             // 
-            this.timer1.Tick += new System.EventHandler(this.timerClick);
+            this.timerTraining.Tick += new System.EventHandler(this.TimerTraining_Tick);
             // 
             // pictureBoxQuestionMark
             // 
@@ -101,7 +101,7 @@
             this.pictureBoxQuestionMark.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBoxQuestionMark.TabIndex = 37;
             this.pictureBoxQuestionMark.TabStop = false;
-            this.pictureBoxQuestionMark.Click += new System.EventHandler(this.pictureBoxQuestionMark_Click);
+            this.pictureBoxQuestionMark.Click += new System.EventHandler(this.PictureBoxQuestionMark_Click);
             // 
             // pictureBoxCar
             // 
@@ -133,17 +133,17 @@
             this.pictureBoxLeftKey.TabIndex = 31;
             this.pictureBoxLeftKey.TabStop = false;
             // 
-            // pictureBoxSpedometerIcon
+            // pictureBoxIconMenu
             // 
-            this.pictureBoxSpedometerIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxSpedometerIcon.Image = global::CrazyDriver.Properties.Resources.iconMenu1;
-            this.pictureBoxSpedometerIcon.Location = new System.Drawing.Point(12, 509);
-            this.pictureBoxSpedometerIcon.Name = "pictureBoxSpedometerIcon";
-            this.pictureBoxSpedometerIcon.Size = new System.Drawing.Size(60, 60);
-            this.pictureBoxSpedometerIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxSpedometerIcon.TabIndex = 29;
-            this.pictureBoxSpedometerIcon.TabStop = false;
-            this.pictureBoxSpedometerIcon.Click += new System.EventHandler(this.pictureBoxSpedometerIcon_Click);
+            this.pictureBoxIconMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxIconMenu.Image = global::CrazyDriver.Properties.Resources.iconMenu1;
+            this.pictureBoxIconMenu.Location = new System.Drawing.Point(12, 509);
+            this.pictureBoxIconMenu.Name = "pictureBoxIconMenu";
+            this.pictureBoxIconMenu.Size = new System.Drawing.Size(60, 60);
+            this.pictureBoxIconMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxIconMenu.TabIndex = 29;
+            this.pictureBoxIconMenu.TabStop = false;
+            this.pictureBoxIconMenu.Click += new System.EventHandler(this.PictureBoxIconMenu_Click);
             // 
             // pictureBoxBackgroundTraining
             // 
@@ -156,72 +156,72 @@
             this.pictureBoxBackgroundTraining.TabIndex = 0;
             this.pictureBoxBackgroundTraining.TabStop = false;
             // 
-            // label1
+            // labelTextFirst
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.label1.Location = new System.Drawing.Point(230, 163);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(307, 34);
-            this.label1.TabIndex = 38;
-            this.label1.Text = "Избегай столкновений!";
+            this.labelTextFirst.AutoSize = true;
+            this.labelTextFirst.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTextFirst.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.labelTextFirst.Location = new System.Drawing.Point(230, 163);
+            this.labelTextFirst.Name = "labelTextFirst";
+            this.labelTextFirst.Size = new System.Drawing.Size(307, 34);
+            this.labelTextFirst.TabIndex = 38;
+            this.labelTextFirst.Text = "Избегай столкновений!";
             // 
-            // label2
+            // labelTextSecond
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.label2.Location = new System.Drawing.Point(88, 213);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(580, 34);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "С увеличением счета скорость игрока растет .";
+            this.labelTextSecond.AutoSize = true;
+            this.labelTextSecond.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTextSecond.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.labelTextSecond.Location = new System.Drawing.Point(88, 213);
+            this.labelTextSecond.Name = "labelTextSecond";
+            this.labelTextSecond.Size = new System.Drawing.Size(580, 34);
+            this.labelTextSecond.TabIndex = 39;
+            this.labelTextSecond.Text = "С увеличением счета скорость игрока растет .";
             // 
-            // label3
+            // labelTextThird
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.label3.Location = new System.Drawing.Point(122, 266);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(510, 34);
-            this.label3.TabIndex = 40;
-            this.label3.Text = "Чем дальше проедешь - тем лучше приз!";
+            this.labelTextThird.AutoSize = true;
+            this.labelTextThird.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTextThird.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.labelTextThird.Location = new System.Drawing.Point(122, 266);
+            this.labelTextThird.Name = "labelTextThird";
+            this.labelTextThird.Size = new System.Drawing.Size(510, 34);
+            this.labelTextThird.TabIndex = 40;
+            this.labelTextThird.Text = "Чем дальше проедешь - тем лучше приз!";
             // 
-            // label4
+            // labelTextFourth
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
-            this.label4.Location = new System.Drawing.Point(326, 322);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(98, 34);
-            this.label4.TabIndex = 41;
-            this.label4.Text = "Удачи!";
+            this.labelTextFourth.AutoSize = true;
+            this.labelTextFourth.Font = new System.Drawing.Font("Microsoft Uighur", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTextFourth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(148)))), ((int)(((byte)(148)))), ((int)(((byte)(148)))));
+            this.labelTextFourth.Location = new System.Drawing.Point(326, 322);
+            this.labelTextFourth.Name = "labelTextFourth";
+            this.labelTextFourth.Size = new System.Drawing.Size(98, 34);
+            this.labelTextFourth.TabIndex = 41;
+            this.labelTextFourth.Text = "Удачи!";
             // 
-            // pictureBoxQuestionMark2
+            // pictureBoxQuestionMarkIcon
             // 
-            this.pictureBoxQuestionMark2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxQuestionMark2.Image = global::CrazyDriver.Properties.Resources.questionMark;
-            this.pictureBoxQuestionMark2.Location = new System.Drawing.Point(318, 468);
-            this.pictureBoxQuestionMark2.Name = "pictureBoxQuestionMark2";
-            this.pictureBoxQuestionMark2.Size = new System.Drawing.Size(90, 90);
-            this.pictureBoxQuestionMark2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxQuestionMark2.TabIndex = 42;
-            this.pictureBoxQuestionMark2.TabStop = false;
-            this.pictureBoxQuestionMark2.Click += new System.EventHandler(this.pictureBoxQuestionMark2_Click);
+            this.pictureBoxQuestionMarkIcon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxQuestionMarkIcon.Image = global::CrazyDriver.Properties.Resources.questionMark;
+            this.pictureBoxQuestionMarkIcon.Location = new System.Drawing.Point(318, 468);
+            this.pictureBoxQuestionMarkIcon.Name = "pictureBoxQuestionMarkIcon";
+            this.pictureBoxQuestionMarkIcon.Size = new System.Drawing.Size(90, 90);
+            this.pictureBoxQuestionMarkIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxQuestionMarkIcon.TabIndex = 42;
+            this.pictureBoxQuestionMarkIcon.TabStop = false;
+            this.pictureBoxQuestionMarkIcon.Click += new System.EventHandler(this.PictureBoxQuestionMark2_Click);
             // 
             // FormTraining
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 603);
-            this.Controls.Add(this.pictureBoxQuestionMark2);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBoxQuestionMarkIcon);
+            this.Controls.Add(this.labelTextFourth);
+            this.Controls.Add(this.labelTextThird);
+            this.Controls.Add(this.labelTextSecond);
+            this.Controls.Add(this.labelTextFirst);
             this.Controls.Add(this.pictureBoxQuestionMark);
             this.Controls.Add(this.pictureBoxCar);
             this.Controls.Add(this.labelRight);
@@ -229,21 +229,21 @@
             this.Controls.Add(this.pictureBoxRightKey);
             this.Controls.Add(this.pictureBoxLeftKey);
             this.Controls.Add(this.labelTraining);
-            this.Controls.Add(this.pictureBoxSpedometerIcon);
+            this.Controls.Add(this.pictureBoxIconMenu);
             this.Controls.Add(this.pictureBoxBackgroundTraining);
             this.Name = "FormTraining";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormTraining";
             this.Load += new System.EventHandler(this.FormTraining_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.keisDown);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.keisUp);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.KeyisDown);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.KeyisUp);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestionMark)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxCar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRightKey)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftKey)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpedometerIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackgroundTraining)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestionMark2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxQuestionMarkIcon)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -252,19 +252,19 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBoxBackgroundTraining;
-        private System.Windows.Forms.PictureBox pictureBoxSpedometerIcon;
+        private System.Windows.Forms.PictureBox pictureBoxIconMenu;
         private System.Windows.Forms.Label labelTraining;
         private System.Windows.Forms.PictureBox pictureBoxLeftKey;
         private System.Windows.Forms.PictureBox pictureBoxRightKey;
         private System.Windows.Forms.Label labelLeft;
         private System.Windows.Forms.Label labelRight;
         private System.Windows.Forms.PictureBox pictureBoxCar;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerTraining;
         private System.Windows.Forms.PictureBox pictureBoxQuestionMark;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pictureBoxQuestionMark2;
+        private System.Windows.Forms.Label labelTextFirst;
+        private System.Windows.Forms.Label labelTextSecond;
+        private System.Windows.Forms.Label labelTextThird;
+        private System.Windows.Forms.Label labelTextFourth;
+        private System.Windows.Forms.PictureBox pictureBoxQuestionMarkIcon;
     }
 }

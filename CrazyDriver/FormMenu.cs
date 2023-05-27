@@ -26,7 +26,7 @@ namespace CrazyDriver
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             MaximizeBox = false;
 
-            var controls = new Control[]
+            var controlsForBackgroundFormMenu = new Control[]
            {
                 labelMenuGame,
                 labelCrazy,
@@ -40,84 +40,45 @@ namespace CrazyDriver
                 labelTraining
            };
 
-            foreach (var control in controls)
+            foreach (var control in controlsForBackgroundFormMenu)
             {
                 control.Parent = pictureBoxBackgroundMenu;
                 control.BackColor = Color.Transparent;
             }
         }
 
-        private void labelExit_Click(object sender, EventArgs e)
+        private void LabelExit_Click(object sender, EventArgs e)
         {
             Close();
         }
 
-
-        private void LabelSattings_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
+        private void Label_MouseMove(object sender, MouseEventArgs e)
         {
-            labelSattings.ForeColor = System.Drawing.Color.Red;
-
+            var label = (Label)sender;
+            label.ForeColor = Color.Red;
         }
 
-        private void LabelSattings_MouseLeave(object sender, EventArgs e)
+        private void Label_MouseLeave(object sender, EventArgs e)
         {
-            labelSattings.ForeColor = System.Drawing.Color.Gray;
+            var label = (Label)sender;
+            label.ForeColor = Color.Gray;
         }
 
-        private void LabelExit_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            labelExit.ForeColor = System.Drawing.Color.Red;
-
-        }
-
-        private void LabelExit_MouseLeave(object sender, EventArgs e)
-        {
-            labelExit.ForeColor = System.Drawing.Color.Gray;
-        }
-        private void LabelGame_MouseMove(object sender, System.Windows.Forms.MouseEventArgs e)
-        {
-            labelGame.ForeColor = System.Drawing.Color.Red;
-
-        }
-
-        private void LabelGame_MouseLeave(object sender, EventArgs e)
-        {
-            labelGame.ForeColor = System.Drawing.Color.Gray;
-        }
-
-        private void labelShop_Click(object sender, EventArgs e)
-        {
-            FormShop shop = new FormShop();
-            shop.Show();
-            this.Hide();
-        }
-
-        private void labelSattings_Click(object sender, EventArgs e)
+        private void LabelSattings_Click(object sender, EventArgs e)
         {
             FormSattings sattings = new FormSattings();
             sattings.Show();
             this.Hide();
         }
 
-        private void labelGame_Click(object sender, EventArgs e)
+        private void LabelGame_Click(object sender, EventArgs e)
         {
-           
             FormWarning formWarning = new FormWarning();
             formWarning.Show();
             this.Hide();
         }
 
-        private void labelTraining_MouseMove(object sender, MouseEventArgs e)
-        {
-            labelTraining.ForeColor = System.Drawing.Color.Red;
-        }
-
-        private void labelTrainig_MouseLeave(object sender, EventArgs e)
-        {
-            labelTraining.ForeColor = System.Drawing.Color.Gray;
-        }
-
-        private void labelTraining_Click(object sender, EventArgs e)
+        private void LabelTraining_Click(object sender, EventArgs e)
         {
             FormTraining formTraining = new FormTraining();
             formTraining.Show();

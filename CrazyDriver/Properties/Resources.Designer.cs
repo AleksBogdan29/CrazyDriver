@@ -63,6 +63,26 @@ namespace CrazyDriver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1619222035_2_phonoteka_org_p_fon {
+            get {
+                object obj = ResourceManager.GetObject("1619222035_2-phonoteka_org-p-fon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1619222035_2_phonoteka_org_p_fon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("1619222035_2-phonoteka_org-p-fon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1674281157_catherineasquithgallery_com_p_pri_pechati_risunka_serii_fon_foto_2 {
             get {
                 object obj = ResourceManager.GetObject("1674281157_catherineasquithgallery-com-p-pri-pechati-risunka-serii-fon-foto-2", resourceCulture);
@@ -93,9 +113,29 @@ namespace CrazyDriver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1679793642_phonoteka_org_p_znachok_mestopolozheniya_oboi_krasivo_87 {
+            get {
+                object obj = ResourceManager.GetObject("1679793642_phonoteka-org-p-znachok-mestopolozheniya-oboi-krasivo-87", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4955d7ec900b69c6986006f44a00e3c2 {
             get {
                 object obj = ResourceManager.GetObject("4955d7ec900b69c6986006f44a00e3c2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5122155__1_ {
+            get {
+                object obj = ResourceManager.GetObject("5122155 (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -173,6 +213,16 @@ namespace CrazyDriver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap audiForTrafic2 {
+            get {
+                object obj = ResourceManager.GetObject("audiForTrafic2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap BackgroundForSettingsForm {
             get {
                 object obj = ResourceManager.GetObject("BackgroundForSettingsForm", resourceCulture);
@@ -206,6 +256,16 @@ namespace CrazyDriver.Properties {
         internal static System.Drawing.Bitmap backGroundMenu {
             get {
                 object obj = ResourceManager.GetObject("backGroundMenu", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap badRoad {
+            get {
+                object obj = ResourceManager.GetObject("badRoad", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,9 +443,79 @@ namespace CrazyDriver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap contariwiseIcon {
+            get {
+                object obj = ResourceManager.GetObject("contariwiseIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap differentCar {
+            get {
+                object obj = ResourceManager.GetObject("differentCar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap differentCarIcon {
+            get {
+                object obj = ResourceManager.GetObject("differentCarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap differentCarIcon_PhotoRoom_png_PhotoRoom {
+            get {
+                object obj = ResourceManager.GetObject("differentCarIcon-PhotoRoom.png-PhotoRoom", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap differentCarIcon_PhotoRoom1 {
+            get {
+                object obj = ResourceManager.GetObject("differentCarIcon-PhotoRoom1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap explosion {
             get {
                 object obj = ResourceManager.GetObject("explosion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap fastCarIcon {
+            get {
+                object obj = ResourceManager.GetObject("fastCarIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ferrariForDifferentCar {
+            get {
+                object obj = ResourceManager.GetObject("ferrariForDifferentCar", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +543,26 @@ namespace CrazyDriver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap iconDollar {
+            get {
+                object obj = ResourceManager.GetObject("iconDollar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconLocation {
+            get {
+                object obj = ResourceManager.GetObject("iconLocation", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap iconMenu {
             get {
                 object obj = ResourceManager.GetObject("iconMenu", resourceCulture);
@@ -426,6 +576,36 @@ namespace CrazyDriver.Properties {
         internal static System.Drawing.Bitmap iconMenu1 {
             get {
                 object obj = ResourceManager.GetObject("iconMenu1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iconPlus {
+            get {
+                object obj = ResourceManager.GetObject("iconPlus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_paper_computer_icons_mon {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-paper-computer-icons-mon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_paper_computer_icons_mon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-paper-computer-icons-mon (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -533,9 +713,29 @@ namespace CrazyDriver.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap oldCar {
+            get {
+                object obj = ResourceManager.GetObject("oldCar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap peugeotForTrafic {
             get {
                 object obj = ResourceManager.GetObject("peugeotForTrafic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap png_transparent_car_loan_automot {
+            get {
+                object obj = ResourceManager.GetObject("png-transparent-car-loan-automot", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -586,6 +786,16 @@ namespace CrazyDriver.Properties {
         internal static System.Drawing.Bitmap rightKey {
             get {
                 object obj = ResourceManager.GetObject("rightKey", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Screenshot_10 {
+            get {
+                object obj = ResourceManager.GetObject("Screenshot_10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -646,6 +856,26 @@ namespace CrazyDriver.Properties {
         internal static System.Drawing.Bitmap silver {
             get {
                 object obj = ResourceManager.GetObject("silver", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snailIcon {
+            get {
+                object obj = ResourceManager.GetObject("snailIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap snailIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("snailIcon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -736,6 +966,26 @@ namespace CrazyDriver.Properties {
         internal static System.Drawing.Bitmap WarningGif {
             get {
                 object obj = ResourceManager.GetObject("WarningGif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zipIcon {
+            get {
+                object obj = ResourceManager.GetObject("zipIcon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap zipIcon1 {
+            get {
+                object obj = ResourceManager.GetObject("zipIcon1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

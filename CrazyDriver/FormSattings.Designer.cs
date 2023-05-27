@@ -31,11 +31,11 @@
             this.labelCrazy = new System.Windows.Forms.Label();
             this.labelDriver = new System.Windows.Forms.Label();
             this.labelSattings = new System.Windows.Forms.Label();
-            this.pictureBoxSpedometerIcon = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIconMenu = new System.Windows.Forms.PictureBox();
             this.pictureBoxSpeedometerIcon = new System.Windows.Forms.PictureBox();
             this.pictureBoxBackgroundSattings = new System.Windows.Forms.PictureBox();
             this.checkBoxMute = new System.Windows.Forms.CheckBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpedometerIcon)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconMenu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeedometerIcon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackgroundSattings)).BeginInit();
             this.SuspendLayout();
@@ -76,17 +76,17 @@
             this.labelSattings.TabIndex = 27;
             this.labelSattings.Text = "Настройки";
             // 
-            // pictureBoxSpedometerIcon
+            // pictureBoxIconMenu
             // 
-            this.pictureBoxSpedometerIcon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBoxSpedometerIcon.Image = global::CrazyDriver.Properties.Resources.iconMenu1;
-            this.pictureBoxSpedometerIcon.Location = new System.Drawing.Point(12, 508);
-            this.pictureBoxSpedometerIcon.Name = "pictureBoxSpedometerIcon";
-            this.pictureBoxSpedometerIcon.Size = new System.Drawing.Size(60, 60);
-            this.pictureBoxSpedometerIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pictureBoxSpedometerIcon.TabIndex = 28;
-            this.pictureBoxSpedometerIcon.TabStop = false;
-            this.pictureBoxSpedometerIcon.Click += new System.EventHandler(this.pictureBoxSpedometerIcon_Click);
+            this.pictureBoxIconMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBoxIconMenu.Image = global::CrazyDriver.Properties.Resources.iconMenu1;
+            this.pictureBoxIconMenu.Location = new System.Drawing.Point(12, 508);
+            this.pictureBoxIconMenu.Name = "pictureBoxIconMenu";
+            this.pictureBoxIconMenu.Size = new System.Drawing.Size(60, 60);
+            this.pictureBoxIconMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBoxIconMenu.TabIndex = 28;
+            this.pictureBoxIconMenu.TabStop = false;
+            this.pictureBoxIconMenu.Click += new System.EventHandler(this.PictureBoxIconMenu_Click);
             // 
             // pictureBoxSpeedometerIcon
             // 
@@ -120,6 +120,8 @@
             this.checkBoxMute.TabIndex = 29;
             this.checkBoxMute.Text = "Выключить звук";
             this.checkBoxMute.UseVisualStyleBackColor = true;
+            this.checkBoxMute.MouseLeave += new System.EventHandler(this.CheckBoxl_MouseLeave);
+            this.checkBoxMute.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CheckBox_MouseMove);
             // 
             // FormSattings
             // 
@@ -127,7 +129,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(732, 603);
             this.Controls.Add(this.checkBoxMute);
-            this.Controls.Add(this.pictureBoxSpedometerIcon);
+            this.Controls.Add(this.pictureBoxIconMenu);
             this.Controls.Add(this.labelSattings);
             this.Controls.Add(this.pictureBoxSpeedometerIcon);
             this.Controls.Add(this.labelDriver);
@@ -137,7 +139,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sattings";
             this.Load += new System.EventHandler(this.FormSattings_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpedometerIcon)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconMenu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSpeedometerIcon)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxBackgroundSattings)).EndInit();
             this.ResumeLayout(false);
@@ -152,7 +154,7 @@
         private System.Windows.Forms.Label labelDriver;
         private System.Windows.Forms.PictureBox pictureBoxSpeedometerIcon;
         private System.Windows.Forms.Label labelSattings;
-        private System.Windows.Forms.PictureBox pictureBoxSpedometerIcon;
+        private System.Windows.Forms.PictureBox pictureBoxIconMenu;
         private System.Windows.Forms.CheckBox checkBoxMute;
     }
 }

@@ -70,12 +70,6 @@
     <Compile Include="FormSattings.Designer.cs">
       <DependentUpon>FormSattings.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormShop.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormShop.Designer.cs">
-      <DependentUpon>FormShop.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormTraining.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,9 +95,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormSattings.resx">
       <DependentUpon>FormSattings.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormShop.resx">
-      <DependentUpon>FormShop.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTraining.resx">
       <DependentUpon>FormTraining.cs</DependentUpon>
@@ -391,6 +382,81 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\koenigeseggForPlayer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snailIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\snailIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zipIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fastCarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\contariwiseIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zipIcon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ferrariForDifferentCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\differentCarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\differentCarIcon-PhotoRoom.png-PhotoRoom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\differentCarIcon-PhotoRoom.png-PhotoRoom1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\png-transparent-car-loan-automot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\differentCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\oldCar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\audiForTrafic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconLocation.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1679793642_phonoteka-org-p-znachok-mestopolozheniya-oboi-krasivo-87.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1619222035_2-phonoteka_org-p-fon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5122155 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1619222035_2-phonoteka_org-p-fon %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\badRoad.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot_10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconDollar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-paper-computer-icons-mon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-paper-computer-icons-mon %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

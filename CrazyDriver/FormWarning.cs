@@ -24,15 +24,13 @@ namespace CrazyDriver
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             MaximizeBox = false;
 
-
-
-            timer1.Interval = 10000;
-            timer1.Enabled = true;
+            timerWarning.Interval = 10000;
+            timerWarning.Enabled = true;
         }
 
-        private void TimerClick(object sender, EventArgs e)
+        private void TimerWarning_Tick(object sender, EventArgs e)
         {
-            timer1.Enabled = false;
+            timerWarning.Enabled = false;
            FormGame formGame = new FormGame();
             formGame.Show();
             this.Hide();

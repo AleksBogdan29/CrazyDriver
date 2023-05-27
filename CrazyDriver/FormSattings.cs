@@ -24,30 +24,43 @@ namespace CrazyDriver
             FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             MaximizeBox = false;
 
-            var controls = new Control[]
+            var contlolsForBackgroundFormSattings = new Control[]
          {
-              
                 labelCrazy,
                 labelDriver,
                 pictureBoxSpeedometerIcon,
                 labelSattings,
-                pictureBoxSpedometerIcon,
+                pictureBoxIconMenu,
                 checkBoxMute
               
          };
 
-            foreach (var control in controls)
+            foreach (var control in contlolsForBackgroundFormSattings)
             {
                 control.Parent = pictureBoxBackgroundSattings;
                 control.BackColor = Color.Transparent;
             }
         }
 
-        private void pictureBoxSpedometerIcon_Click(object sender, EventArgs e)
+        private void PictureBoxIconMenu_Click(object sender, EventArgs e)
         {
             FormMenu formMenu = new FormMenu();
             formMenu.Show();
             this.Hide();
         }
+
+        private void CheckBox_MouseMove(object sender, MouseEventArgs e)
+        {
+            var checkBox = (CheckBox)sender;
+            checkBox.ForeColor = Color.Red;
+        }
+
+        private void CheckBoxl_MouseLeave(object sender, EventArgs e)
+        {
+            var checkBox = (CheckBox)sender;
+            checkBox.ForeColor = Color.Gray;
+        }
+
+
     }
 }
